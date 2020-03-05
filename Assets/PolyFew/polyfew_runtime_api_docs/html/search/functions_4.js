@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['simplifymeshes_49',['SimplifyMeshes',['../class_poly_few_runtime_1_1_polyfew_runtime.html#ac00c29b2871486e143d860379c7abd24',1,'PolyFewRuntime::PolyfewRuntime']]],
+  ['simplifyobjectdeep_50',['SimplifyObjectDeep',['../class_poly_few_runtime_1_1_polyfew_runtime.html#a12f05dfd4500b425d47823a4363eb6b9',1,'PolyFewRuntime.PolyfewRuntime.SimplifyObjectDeep(GameObject toSimplify, SimplificationOptions simplificationOptions, Action&lt; GameObject, MeshRendererPair &gt; OnEachMeshSimplified)'],['../class_poly_few_runtime_1_1_polyfew_runtime.html#a74d004798755f23a1f66ac835bd88197',1,'PolyFewRuntime.PolyfewRuntime.SimplifyObjectDeep(GameObject toSimplify, SimplificationOptions simplificationOptions)'],['../class_poly_few_runtime_1_1_polyfew_runtime.html#abb5d5c636442a9abeb559d89a5c30e5a',1,'PolyFewRuntime.PolyfewRuntime.SimplifyObjectDeep(ObjectMeshPairs objectMeshPairs, SimplificationOptions simplificationOptions, Action&lt; GameObject, MeshRendererPair &gt; OnEachMeshSimplified)']]]
+];
