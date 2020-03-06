@@ -101,7 +101,7 @@ public class SwapCharacters : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            puppetIndex++;
+            puppetIndex++;  // The same as saying puppetIndex = puppetIndex + 1;  ++puppetIndex
             if (puppetIndex >= puppets.Length)
                 puppetIndex = 0;
             SwapPuppet(puppetIndex);
