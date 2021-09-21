@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement class="Settings">
+      <ui:VisualElement class="SettingsRow">
+        <ui:Label text="SizeTemplate" />
+        <ui:EnumField name="VideoSizeField" type=""/>
+      </ui:VisualElement>
+      <ui:VisualElement class="CustomSize SettingsRow">
+        <ui:Label text="Size" />
+      </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

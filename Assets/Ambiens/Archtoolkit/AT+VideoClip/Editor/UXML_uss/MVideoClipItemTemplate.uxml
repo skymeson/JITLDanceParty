@@ -1,0 +1,53 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement class="VideoClip">
+        <ui:VisualElement class="VideoClipContainer" style="display: flex; width: 100%; justify-content: flex-start;">
+          
+          <ui:VisualElement class="VideoClipTopContainer">
+            <ui:Button class="LeftTransitionButton TransitionButton ImageButton small" tooltip="Clip Transition..."  />
+            <ui:Button class="MoveLeftButton MoveButton ImageButton small" tooltip="Move Clip Left"  />
+            
+            <ui:VisualElement class="VideoClipMainInfoContainer">
+
+              <uie:IntegerField class="TimeField"  style="white-space: nowrap;" />
+              <ui:Label text="s" style="white-space: nowrap; align-self:center;" />
+              <ui:Button class="ClipSettingsButton ImageButton small" tooltip="Open Clip Settings..." style="background-image: url(&apos;/Assets/Ambiens/Archtoolkit/AT+VideoClip/Editor/Images/settings.png&apos;); " />
+              <ui:Button class="ClipPreviewButton ImageButton small" tooltip="Clip Preview" style="background-image: url(&apos;/Assets/Ambiens/Archtoolkit/AT+VideoClip/Editor/Images/play.png&apos;); " />
+
+            </ui:VisualElement>
+            
+            <ui:Button class="MoveRightButton MoveButton ImageButton small"  tooltip="Move Clip Right" />
+            <ui:Button class="RightTransitionButton TransitionButton ImageButton small"  tooltip="Clip Transition..." />
+
+          </ui:VisualElement>
+          <ui:VisualElement class="spacer">
+          </ui:VisualElement>
+          <ui:VisualElement class="KeyFrameDraggerContainer">
+
+            <ui:VisualElement class="KeyFrameSecondsTickContainer">
+              <ui:VisualElement class="SecondsTick">
+
+              </ui:VisualElement>
+              <ui:VisualElement class="SecondsTick">
+
+              </ui:VisualElement>
+              <ui:VisualElement class="SecondsTick">
+
+              </ui:VisualElement>
+            </ui:VisualElement>
+            
+            <ui:VisualElement class="KeyFrameDraggerElement" tabindex="10">
+            </ui:VisualElement>
+          
+          </ui:VisualElement>
+          <ui:VisualElement class="KeyFrameContainer">
+
+          </ui:VisualElement>
+          
+        </ui:VisualElement>
+        <ui:VisualElement class="AddVideoClipContainer"  >
+            <ui:Button name="addVideoClipButton" tooltip="Add Clip" class="ImageButton big" style="background-image: url(&apos;/Assets/Ambiens/Archtoolkit/AT+VideoClip/Editor/Images/add_circle.png&apos;); "  />
+        </ui:VisualElement>
+        <ui:VisualElement class="PlayLine"  >
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

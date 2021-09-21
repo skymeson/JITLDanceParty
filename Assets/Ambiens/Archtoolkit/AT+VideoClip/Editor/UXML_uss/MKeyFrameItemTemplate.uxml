@@ -1,0 +1,28 @@
+﻿<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+
+  <ui:VisualElement class="KeyFrame" >
+
+    <ui:VisualElement class="KeyFrameButtonsWrapper" >
+      <ui:VisualElement class="ButtonsWrapper" >
+        <ui:Button class="refreshKeyFramePosition ImageButton small" style="background-image: url(&apos;/Assets/Ambiens/Archtoolkit/AT+VideoClip/Editor/Images/reload.png&apos;);" />
+      </ui:VisualElement>
+
+    </ui:VisualElement>
+
+    <ui:Button class="ImageContainer" >
+      <ui:Image class="KeyFrameImage" style="background-image: url(&apos;/Assets/Ambiens/Archtoolkit/AT+VideoClip/Editor/Images/photo_placeholder_icon.png&apos;);" />
+    </ui:Button>
+
+    <ui:VisualElement class="KeyFrameButtonsWrapper" >
+      <ui:VisualElement class="ButtonsWrapper" >
+        <ui:Button class="SettingsKeyFrameButton ImageButton small" style="background-image: url(&apos;/Assets/Ambiens/Archtoolkit/AT+VideoClip/Editor/Images/settings.png&apos;); " />
+        <ui:Button class="DeleteKeyFrameButton ImageButton small" style="background-image: url(&apos;/Assets/Ambiens/Archtoolkit/AT+VideoClip/Editor/Images/delete.png&apos;); " />
+      </ui:VisualElement>
+    </ui:VisualElement>
+    
+    <ui:Button class="LeftButton KeyFrameAddButton ImageButton medium" />
+    <ui:Button class="RightButton KeyFrameAddButton ImageButton medium"/>
+
+  </ui:VisualElement>
+
+</ui:UXML>

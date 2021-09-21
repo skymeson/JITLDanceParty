@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement class="ProjectListItem" style="flex-direction: row; height: 55px; align-items: stretch; justify-content: flex-start;">
+      <ui:VisualElement class="ImageWrapper" style="height: 40px; width: 42px; -unity-text-align: middle-left; font-size: 20px;" >
+        <ui:Image class="Image" />
+      </ui:VisualElement>
+      <ui:VisualElement class="TitleAndDescriptionWrapper">
+        <ui:Label class="NameLabel"  text="Project"  />
+        <ui:VisualElement class="ResolutionLabelWrapper" >
+          <ui:Label class="WidthLabel"></ui:Label>
+          <ui:Label text=" x "></ui:Label>
+          <ui:Label class="HeightLabel"></ui:Label>
+        </ui:VisualElement>
+      </ui:VisualElement>
+      <ui:Button  tooltip="Project Settings..." class="SettingsButton ImageButton small" style="background-image: url(&apos;/Assets/Ambiens/Archtoolkit/AT+VideoClip/Editor/Images/settings.png&apos;);" />
+
+    </ui:VisualElement>
+  
+</ui:UXML>

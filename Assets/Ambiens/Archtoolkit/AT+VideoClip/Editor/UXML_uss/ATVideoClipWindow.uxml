@@ -1,0 +1,48 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+  
+  <ui:VisualElement name="VisualElement" style="align-items: stretch; justify-content: flex-start; flex-direction: row; height: 100%;">
+    <ui:Style src="/Assets/Ambiens/Archtoolkit/AT+VideoClip/Editor/UXML_uss/Style.uss" />    
+    
+    <ui:VisualElement name="leftWrapper">
+      <ui:VisualElement  name="topButtonWrapper" >
+          <ui:Button name="addProjectButton" tooltip="Add Project" class="ImageButton medium" style="background-image: url(&apos;/Assets/Ambiens/Archtoolkit/AT+VideoClip/Editor/Images/add_circle.png&apos;);"/>
+          <ui:VisualElement class="HorizontalSpacer"></ui:VisualElement>
+          <ui:Button name="openFolderButton" tooltip="Open Recordings Folder" class="ImageButton medium" style="background-image: url(&apos;/Assets/Ambiens/Archtoolkit/AT+VideoClip/Editor/Images/folder.png&apos;);"/>
+          <ui:Button name="setLayoutButton" tooltip="Switch Windows Layout" class="ImageButton medium" style="background-image: url(&apos;/Assets/Ambiens/Archtoolkit/AT+VideoClip/Editor/Images/layout.png&apos;);"/>
+      </ui:VisualElement>
+      <ui:ListView focusable="true" name="ProjectList" item-height="45"  />
+    </ui:VisualElement>
+    
+    <ui:ScrollView style="width: 50px; height: 100%; align-items:center;">
+        <ui:Button  name="PlayButton" tooltip="Preview" class="ImageButton medium" style="background-image: url(&apos;/Assets/Ambiens/Archtoolkit/AT+VideoClip/Editor/Images/play.png&apos;);" />
+        <ui:Button  name="RecordButton"  tooltip="Record Video" class="ImageButton medium" style="background-image: url(&apos;/Assets/Ambiens/Archtoolkit/AT+VideoClip/Editor/Images/play_circle.png&apos;);" />
+    </ui:ScrollView>
+    <ui:VisualElement name="VideoClip" style="width: 100%; border-left-width: 0; border-top-width: 0; height: 100%; flex-direction: row; min-width: 60px; border-left-width: 1px; border-left-color: rgb(255, 255, 255);">
+        <ui:ScrollView name="VideoClipScrollView"  class="unity-scroll-view--horizontal"/>
+        <ui:VisualElement name="ScrollScrollerLeft" > </ui:VisualElement>
+        <ui:VisualElement name="ScrollScrollerRight" ></ui:VisualElement>
+    </ui:VisualElement>
+
+
+
+    <ui:VisualElement name="ModalWindow" class="ModalWindow" tabIndex="100">
+      <ui:VisualElement name="ModalWindowContainer">
+        <ui:VisualElement name="ModalWindowTitleContainer">
+          <ui:Label name="ModalWindowTitle" text="NAME"></ui:Label>
+          
+        </ui:VisualElement>
+        <ui:VisualElement name="ModalWindowContent">
+          
+        </ui:VisualElement>
+        <ui:VisualElement class="ButtonsWrapper">
+          
+          <ui:Button name="ConfirmModalButton" text="CONFIRM"></ui:Button>
+          <ui:Button name="CloseModalButton" text="CLOSE"></ui:Button>
+
+        </ui:VisualElement>
+        
+      </ui:VisualElement>
+    </ui:VisualElement>
+    
+  </ui:VisualElement>
+</ui:UXML>

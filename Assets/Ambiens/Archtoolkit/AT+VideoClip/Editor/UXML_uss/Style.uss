@@ -1,0 +1,326 @@
+﻿
+#leftWrapper{
+	align-items: stretch; 
+	max-width: none; 
+	width: 250px; 
+	border-right-color: rgb(255, 255, 255); 
+	border-right-width: 1px; 
+	border-top-color: rgb(0, 0, 0); 
+	border-top-width: 1px; height: 100%;
+}
+
+#topButtonWrapper{
+	height: auto; 
+	width: 100%; 
+	flex-direction: row; 
+	
+	margin:5px 0px 5px 5px;
+	padding-bottom:10px;
+}
+#ProjectList{
+	border-top-color: rgb(255, 255, 255); 
+	border-top-width: 1px;
+	height: 100%;
+}
+.ProjectListItem{
+	padding:5px;
+	border-bottom-width:1px;
+	border-bottom-color:#6f6f6f;
+}
+.ProjectListItem .NameLabel{
+	margin-left:5px;
+	height:25px;
+	justify-content: flex-start; 
+	-unity-text-align: middle-left; 
+	white-space: normal; 
+	font-size: 15px;
+	-unity-font-style:bold;
+}
+.ProjectListItem .Image{
+	min-width:100%;
+	min-height:100%;
+	-unity-background-scale-mode: scale-and-crop;
+}
+.ProjectListItem .TitleAndDescriptionWrapper{
+	flex-direction: column;
+}
+.ProjectListItem .ResolutionLabelWrapper{
+	flex-direction: row;
+	margin-left:5px;
+	font-size: 10px;
+}
+.ProjectListItem .SettingsButton{
+	position:absolute;
+	right:0;
+	top:3px;
+}
+.HorizontalSpacer{
+	width:0px;
+	margin:0px 5px;
+	border-left-color:#6f6f6f;
+	border-left-width:1px;
+	border-right-color:#181818;
+	border-right-width:1px;
+}
+
+.ImageButton{
+	
+}
+.ImageButton.small{
+	width:20px;
+	height:20px;
+}
+.ImageButton.medium{
+	width:30px;
+	height:30px;
+}
+.ImageButton.big{
+	width:50px;
+	height:50px;
+}
+
+/*VIDEO CLIP*/
+VideoClipScrollView{
+	height:100%;
+	width:100%;
+}
+.spacer{
+	width:100%;
+	height:20px;
+}
+.VideoClip{
+	min-width: 120px;
+	border-left-color:#6f6f6f;
+	border-left-width:1px;
+	border-right-color:#181818;
+	border-right-width:1px;
+	height:100%;
+	padding:10px:
+}
+.VideoClipTopContainer{
+	flex-direction:row;
+	width:100%;
+	border-bottom-width:1px;
+	border-bottom-color:#6f6f6f;
+}
+.VideoClipMainInfoContainer{
+	flex-direction:row;
+	width:100%;
+	align-items:center;
+	justify-content:center;
+
+}
+.VideoClipMainInfoContainer TextInput, .VideoClipMainInfoContainer IntegerInput{
+	padding:5px 10px;
+}
+
+.TransitionButton.LeftTransitionButton {
+	background-image: url("/Assets/Ambiens/Archtoolkit/AT+VideoClip/Editor/Images/LeftTransition.png"); 
+}
+.VideoClip_0 .TransitionButton.LeftTransitionButton{
+	display:flex;
+}
+.TransitionButton.RightTransitionButton {
+	background-image: url("/Assets/Ambiens/Archtoolkit/AT+VideoClip/Editor/Images/RightTransition.png"); 
+}
+
+.VideoClip_0 .MoveButton.MoveLeftButton, .VideoClip_Last .MoveButton.MoveRightButton{
+	display:none;
+}
+.MoveButton.MoveLeftButton{
+	background-image: url("/Assets/Ambiens/Archtoolkit/AT+VideoClip/Editor/Images/backward.png"); 
+}
+.MoveButton.MoveRightButton{
+	background-image: url("/Assets/Ambiens/Archtoolkit/AT+VideoClip/Editor/Images/forward.png"); 
+}
+
+.PlayLine{
+	display:none;
+	position:absolute;
+	top:40px;
+	bottom:0px;
+	width:3px;
+	background-color:#FFFFFF;
+}
+.ActiveClip .PlayLine{
+	display:flex;
+}
+/*END VIDEO CLIP*/
+
+/*KEY FRAMES*/
+.KeyFrameContainer{
+	padding:0px 20px;
+	flex-direction:row;
+}
+.KeyFrame{
+	min-width:180px;
+	align-items:center;
+	background-color:#5D5D5D;
+	padding:10px 0px;
+}
+.KeyFrameDraggerContainer{
+	width:auto;
+	height:30px;
+	background-color:#6f6f6f;
+	margin:0px 20px;
+	position:absolute;
+	bottom:-30px;
+	left:0px;
+	right:0px;
+}
+.KeyFrameDraggerContainer .SecondsTick{
+	height:100%;
+	margin:0;
+	padding:0;
+	flex-grow:1;
+	background-image:url("/Assets/Ambiens/Archtoolkit/AT+VideoClip/Editor/Images/centimeters512.png"); 
+}
+.KeyFrameSecondsTickContainer, .KeyFrameDraggerElement{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	flex-direction:row;
+}
+.KeyFrameDraggerElement{
+	cursor: resize-horizontal;
+}
+.AddVideoClipContainer{
+	width: 100%; 
+	height:100%;
+	align-items: center; 
+	justify-content: center;
+}
+
+.KeyFrameButtonsWrapper{
+
+	width:100%;
+	height:30px;
+}
+.KeyFrameAddButton{
+	position:absolute;
+	background-image: url("/Assets/Ambiens/Archtoolkit/AT+VideoClip/Editor/Images/add_circle.png"); 
+}
+.KeyFrame .LeftButton{
+	left:-20px;
+}
+.KeyFrame .RightButton{
+	right:-20px;
+}
+.KeyFrame .LeftButton,.KeyFrame .RightButton{
+	top:70px;
+}
+
+.ButtonsWrapper{
+	flex-direction: row;
+}
+
+.KeyFrame .KeyFrameButtonsWrapper .ButtonsWrapper .ImageButton{
+	display:none;
+}
+.KeyFrame:hover .KeyFrameButtonsWrapper .ButtonsWrapper .ImageButton{
+	display:flex;
+}
+.KeyFrameContainer.KeyFrames_1 .KeyFrame:hover  .DeleteKeyFrameButton{
+	display:none;
+}
+.KeyFrame:hover .KeyFrameButtonsWrapper .ButtonsWrapper .SettingsKeyFrameButton{
+	display:none!important;
+}
+.ImageContainer{
+	width:150px;
+	height:90px;
+	padding:0;
+	margin:0;
+	border-color:black;
+	border-width:1px;
+	overflow:hidden;
+	
+}
+.ImageContainer Image{
+	min-width:100%;
+	min-height:100%;
+	-unity-background-scale-mode: scale-and-crop;
+}
+.ImageContainer:hover{
+	border-color:white;
+}
+
+.KeyFrameRightTimeDragger{
+	width:5px;
+	height:40px;
+	background-color:#ffffff;
+	position:absolute;
+	bottom:-30px;
+}
+/*END KEY FRAMES*/
+
+/*MODAL*/
+#ModalWindow{
+	display:none;
+	position:absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	background-color:  rgba(0.482, 0.482, 0.482,0.482);
+	align-items:center;
+	flex-direction:column;
+	justify-content:center;
+	align-content:center;
+}
+#ModalWindowContainer{
+	width:300px;
+	min-height:100px;
+	max-height:100%;
+	border-color:black;
+	border-width:1px;
+	background-color:#3F3F3F;
+	border-radius:5px;
+}
+#ModalWindowTitleContainer{
+	background-color:#282828;
+	justify-content:center;
+	align-content:center;
+	-unity-text-align:middle-center;
+	-unity-font-style:bold;
+	border-bottom-color:black;
+	border-bottom-width:1px;
+	padding:5px;
+}
+#ModalWindowContent{
+	background-color:#3F3F3F;
+	padding:20px 10px;
+}
+#ModalWindow .ButtonsWrapper{
+	flex-direction:row-reverse;
+}
+#ModalWindow #ConfirmModalButton{
+	display:none;
+}
+#ModalWindow.ConfirmDialog #ConfirmModalButton{
+	display:flex;
+}
+
+/*END MODAL*/
+
+
+/*OTHER STUFF*/
+#ScrollScrollerLeft{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	width:20px;
+	background-image: url("/Assets/Ambiens/Archtoolkit/AT+VideoClip/Editor/Images/gradient_left.png"); 
+
+}
+#ScrollScrollerRight{
+	position:absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	width:20px;
+	background-image: url("/Assets/Ambiens/Archtoolkit/AT+VideoClip/Editor/Images/gradient_right.png"); 
+}
